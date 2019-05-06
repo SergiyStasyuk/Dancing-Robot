@@ -2,20 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
   <title>Dancing Robot</title>
-<link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-<script src="/assets/jquery.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css"> 
+  <script src="jquery.js"></script>
+
 </head>
 
 <body>
@@ -34,32 +25,10 @@
 <button class="color">change color!</button>
 <button class="moves">break/dance</button>
 
-<img src="/assets/dance_cotter.gif">
+<img class="dancing_man" src="https://media.giphy.com/media/wn8rVP7qC8TNC/giphy.gif" alt="dancing_man">
+<img class="dancing_tree" src="https://media.giphy.com/media/l2JhBrGF8aUBwQpVe/giphy.gif" alt="dancing_tree">
 
-<script>
-// When eyes button is clicked, toggle laser class on brain
-$(".flash").click(function() {
-  $(".brain").toggleClass('laser');
-});
+<script type="text/javascript" src="app.js"></script>
 
-// When color button is clicked, generate an RGBA value
-$(".color").click(function() {
-  // Assign each color a random number 0-255
-  var red = Math.floor(Math.random() * 255);
-  var green = Math.floor(Math.random() * 255);
-  var blue = Math.floor(Math.random() * 255);
-  
-  // Generate an RGBA value from red, green, and blue
-  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
-  
-  // and change the body`s background to our random color
-  $("body").css("background", randomRGBA);
-});
-
-$(".moves").click(function() {
-  $("img").toggle();
-});
-
-</script>
 </body>
 </html>

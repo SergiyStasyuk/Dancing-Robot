@@ -1,7 +1,6 @@
-
 .robot {
   position: relative;
-  left: 100px;
+  left: 400px;
 }
 
 .beep {
@@ -93,29 +92,65 @@
   z-index: -1;
 }
 
-@keyframes dance{
+@keyframes dancing_man{
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
-@-webkit-keyframes dance {
+@-webkit-keyframes dancing_man {
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
-@-moz-keyframes dance {
+@-moz-keyframes dancing_man {
   from {
-    left: 800px;
+    left: 1000px;
   }
 }
 
-img {
-  animation: dance 4s infinite;
-  -webkit-animation: dance 4s infinite;
-  -moz-animation: dance 4s infinite;
+.dancing_man {
+  animation: dancing_man 4s infinite;
+  -webkit-animation: dancing_man 4s infinite;
+  -moz-animation: dancng_man 4s infinite;
   position: absolute;
   top: 200px;
-  left: 400px;
+  left: 800px;
 }
+
+@keyframes dancing_tree {
+  from {
+    right: 100px;
+  }
+}
+
+@-webkit-keyframes dancing_tree {
+  from {
+    right: 950px;
+  }
+}
+
+@-moz-keyframes dancing_tree {
+  from {
+    right: 950px;
+  }
+}
+
+.dancing_tree {
+  animation: dancing_tree 5s infinite;
+  -webkit-animation: dancing_tree 5s infinite;
+  -moz-animation: dancing_tree 5s infinite;
+  position: absolute;
+  top: 200px;
+  width: 200px;
+  height: 200px;
+  /*right: 1200px;*/
+  left: -50px;
+}
+
+
+
+
+
+
