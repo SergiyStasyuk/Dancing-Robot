@@ -111,9 +111,9 @@
 }
 
 .dancing_man {
-  animation: dancing_man 4s infinite;
-  -webkit-animation: dancing_man 4s infinite;
-  -moz-animation: dancng_man 4s infinite;
+  animation: dancing_man 4s infinite alternate;
+  -webkit-animation: dancing_man 4s infinite alternate;
+  -moz-animation: dancng_man 4s infinite alternate;
   position: absolute;
   top: 200px;
   left: 800px;
@@ -121,34 +121,32 @@
 
 @keyframes dancing_tree {
   from {
-    right: 100px;
+    left: 10px;
   }
 }
 
 @-webkit-keyframes dancing_tree {
   from {
-    right: 950px;
+    left: 10px;
   }
 }
 
 @-moz-keyframes dancing_tree {
   from {
-    right: 950px;
+    left: 10px;
   }
 }
 
 .dancing_tree {
-  animation: dancing_tree 5s infinite;
-  -webkit-animation: dancing_tree 5s infinite;
-  -moz-animation: dancing_tree 5s infinite;
+  animation: dancing_tree 4s infinite alternate;
+  -webkit-animation: dancing_tree 4s infinite alternate;
+  -moz-animation: dancing_tree 4s infinite alternate;
   position: absolute;
   top: 200px;
+  left: 200px;
   width: 200px;
   height: 200px;
-  /*right: 1200px;*/
-  left: -50px;
 }
-
 
 
 
